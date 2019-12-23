@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d47b58a-9a9a-43af-acf9-5df9f734bcf6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1RV5AMmoDtnq8bAZjrRIa8aCUdG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/dev/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rh.core.serv.dict" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\rh\product\hr_csdc\pro\WEB-INF\lib" />
+      <recent name="D:\rh\product\hr_csdc" />
+      <recent name="D:\rh\product\hr_csdc\src\com\rh\core\base\db\impl" />
+      <recent name="D:\rh\product\hr_csdc\db" />
+      <recent name="D:\rh\product\hr_csdc\doc\平台文档" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Resin.hr_csdc">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rh.Test" />
+      <module name="hr_csdc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hr_csdc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rh.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rh.core" />
+      <option name="MAIN_CLASS_NAME" value="com.rh.core.TestOrg" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrg.getDept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hr_csdc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rh.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rh.core" />
+      <option name="MAIN_CLASS_NAME" value="com.rh.core.TestOrg" />
+      <option name="METHOD_NAME" value="getDept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hr_csdc" type="ResinConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="Resin 3.1.12" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="PORT" value="80" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings DEPLOYMENT_METHOD="resin.xml" />
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="baseDirectoryName" value="hr_csdc_hr_csdc" />
+        <option name="charset" value="UTF-8" />
+        <option name="port" value="8080" />
+        <option name="resinConf" value="D:\ciel\CSDC\code\rh\product\hr_csdc\resin.conf" />
+        <port>8080</port>
+      </server-settings>
+      <output_file path="$PROJECT_DIR$/hr_csdc.log" />
+      <log_file alias="log" path="$PROJECT_DIR$" />
+      <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.TestOrg" />
+      <item itemvalue="JUnit.TestOrg.getDept" />
+      <item itemvalue="Resin.hr_csdc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestOrg.getDept" />
+        <item itemvalue="JUnit.TestOrg" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d47b58a-9a9a-43af-acf9-5df9f734bcf6" name="Default Changelist" comment="" />
+      <created>1569739278754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569739278754</updated>
+      <workItem from="1569739280076" duration="8489000" />
+      <workItem from="1569748561383" duration="1961000" />
+      <workItem from="1569752029977" duration="20745000" />
+      <workItem from="1570499319142" duration="9230000" />
+      <workItem from="1570526042003" duration="3695000" />
+      <workItem from="1570530452014" duration="710000" />
+      <workItem from="1570603321751" duration="1385000" />
+      <workItem from="1570668625545" duration="17647000" />
+      <workItem from="1570707933516" duration="46000" />
+      <workItem from="1570755406970" duration="659000" />
+      <workItem from="1576571504177" duration="5432000" />
+      <workItem from="1576631843709" duration="5320000" />
+      <workItem from="1576725091641" duration="4365000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="ResinConfigurationType">
+        <watch expression="OrgMgr.getDept(&quot;&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

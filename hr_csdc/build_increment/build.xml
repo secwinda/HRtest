@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+
+<project default="main" basedir=".">
+    <property name="project.name" value="hr_csdc"/>
+    <property name="project.src" value=".."/>
+    <!-- 源码路径 (需传参)-->
+    <property name="project.lib" value="${project.src}/pro/WEB-INF/lib"/>
+    <property name="project.class" value="${project.src}/pro/WEB-INF/classes"/>
+    <property name="source.base" value="dist"/>
+    <!-- 编译后执行码根目录(需传参) -->
+    <property name="source.src" value="${source.base}/${project.name}.war"/>
+    <property name="source.class" value="${source.src}/WEB-INF/classes"/>
+    <property name="source.lib" value="${source.src}/WEB-INF/lib"/>
+    <property name="jdk.path" value=""/>
+    <!-- 编译JDK环境，需传参 -->
+    <property name="fileList.path" value="."/>
+    <!-- 清单文件路径，需传参 -->
+    <property name="project.filelist" value="${fileList.path}/update_list.txt"/>
+    <!-- 清单文件名，需传参 -->
+
+    <path id="project">
+        <fileset dir="${project.lib}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+    <target name="main">
+        <antcall target="combinfilelist"/><!-- 处理文件清单-->
+        <antcall target="compile"/><!-- 编译 -->
+        <antcall target="Copyfile"/><!-- 拷贝文件 -->
+        <antcall target="zip"/><!-- 打包安装文件 -->
+        <antcall target="zip_SY_SERV"/><!-- 打包服务文件 -->
+        <antcall target="zip_SY_SERV_DICT"/><!-- 打包字典文件 -->
+        <antcall target="deleteSource"/><!-- 删除复制的源代码 -->
+    </target>
+    <target name="combinfilelist">
+        <!--处理文件清单 -->
+        <copy tofile="${project.filelist}" file="${fileList.path}/update_list.txt" overwrite="true">
+        </copy>
+        <!--替换斜杠-->
+        <replace file="${project.filelist}" token="/" value="/">
+        </replace>
+        <replace file="${project.filelist}" token="${project.name}/src/" value="pro/WEB-INF/classes/"/>
+        <replace file="${project.filelist}" token="${project.name}/pro/" value="pro/"/>
+        <replace file="${project.filelist}" token="src/" value="pro/WEB-INF/classes/"/>
+        <replace file="${project.filelist}" token=".java" value=".class"/>
+    </target>
+
+    <target name="compile">
+        <delete dir="${source.base}"/>
+        <delete dir="${project.class}"/>
+        <delete dir="${project.src}/pro/WEB-INF/work"/>
+        <delete dir="${project.src}/pro/WEB-INF/tmp"/>
+        <mkdir dir="${project.class}"/>
+        <javac srcdir="${project.src}/src"
+               destdir="${project.class}"
+               executable="${jdk.path}/javac"
+               encoding="UTF-8"
+               debug="true"
+               source="1.6"
+               target="1.6"
+               optimize="true"
+               fork="no"
+               verbose="no"
+               failonerror="off">
+            <classpath refid="project"/>
+        </javac>
+    </target>
+
+    <target name="Copyfile">
+        <echo message="开始拷贝文件---------------------------"/>
+        <delete dir="${source.src}"/>
+        <mkdir dir="${source.src}"/>
+
+        <echo message="第一次全拷贝---------------------------"/>
+        <copy todir="${source.src}" overwrite="true">
+            <fileset dir="${project.src}">
+                <includesfile name="${project.filelist}"/>
+            </fileset>
+        </copy>
+
+        <echo message="第二次内部类拷贝------------------------"/>
+        <replace file="${project.filelist}" token=".class" value="$*.class"/>
+        <copy todir="${source.src}" overwrite="true">
+            <fileset dir="${project.src}">
+                <includesfile name="${project.filelist}"/>
+            </fileset>
+        </copy>
+        <replace file="${project.filelist}" token="$*.class" value=".class"/>
+
+        <echo message="第三次db拷贝------------------------"/>
+        <copy todir="${source.src}/pro/WEB-INF/doc/UPGRADE_TODO/" overwrite="true" failonerror="false">
+            <fileset dir="${source.src}/db/">
+                <include name="**/*.sql"/>
+            </fileset>
+        </copy>
+
+        <echo message="拷贝文件结束---------------------------"/>
+    </target>
+
+    <available property="SY_SERV.available" file="${source.src}/WEB-INF/doc/SY_SERV"/>
+    <available property="SY_SERV_DICT.available" file="${source.src}/WEB-INF/doc/SY_SERV_DICT"/>
+
+    <target name="zip">
+        <echo message="开始打包程序-------------------------"/>
+        <copy todir="${source.src}">
+            <fileset dir="${source.src}/pro"/>
+        </copy>
+        <delete dir="${source.src}/pro"/>
+        <delete dir="${source.src}/db"/>
+        <delete dir="${source.src}/doc"/>
+        <delete dir="${source.src}/build"/>
+        <delete dir="${source.src}/buid_increment"/>
+        <zip destfile="${source.base}/update.zip">
+            <fileset dir="${source.src}/.."/>
+        </zip>
+    </target>
+
+    <target name="zip_SY_SERV" if="SY_SERV.available">
+        <echo message="开始压缩SY_SERV-------------------------"/>
+        <zip destfile="${source.base}/SY_SERV.zip">
+            <fileset dir="${source.src}/WEB-INF/doc/SY_SERV"/>
+        </zip>
+    </target>
+
+    <target name="zip_SY_SERV_DICT" if="SY_SERV_DICT.available">
+        <echo message="开始压缩SY_SERV_DICT-------------------------"/>
+        <zip destfile="${source.base}/SY_SERV_DICT.zip">
+            <fileset dir="${source.src}/WEB-INF/doc/SY_SERV_DICT"/>
+        </zip>
+    </target>
+
+    <target name="deleteSource">
+        <echo message="开始删除备份的源代码-------------------------"/>
+        <delete dir="${source.src}"/>
+    </target>
+
+    <target name="CopySrc">
+        <echo message="开始拷贝文件---------------------------"/>
+        <delete dir="${source.src}"/>
+        <mkdir dir="${source.src}"/>
+
+        <echo message="第一次全拷贝---------------------------"/>
+        <copy todir="${source.src}" overwrite="true">
+            <fileset dir="${project.src}">
+                <includesfile name="${project.filelist}"/>
+            </fileset>
+        </copy>
+
+        <echo message="拷贝文件结束---------------------------"/>
+    </target>
+
+    <target name="src">
+        <antcall target="CopySrc"/><!-- 拷贝文件 -->
+        <antcall target="zip"/><!-- 打包安装文件 -->
+        <antcall target="deleteSource"/><!-- 删除复制的源代码 -->
+    </target>
+
+</project>
