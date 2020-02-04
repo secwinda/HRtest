@@ -20,7 +20,7 @@ _viewer.getBtn("modify_sys").bind("click", function () {
 //新增button
 _viewer.getBtn("add_sys").bind("click", function () {
     Tab.open({
-        "url": "SYS_ORG_INFO_INSERT.card.do?pkCode=" + _viewer.itemValue("seq_id"),
+        "url": "SYS_ORG_INFO_INSERT.card.do",
         "tTitle": "新增机构",
         "menuFlag": 3,
         "params": {

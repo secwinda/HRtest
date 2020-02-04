@@ -676,7 +676,7 @@ rh.vi.cardView.prototype._act = function(aId,aObj) {
 			    setTimeout(function() {
 			     	_self._saveForm();
 			        if (_self.saveReturn == true || _self.saveReturn == "true") {//保存后自动返回到列表页面
-			        	_self.backA.click();
+			        	_self.backClick();
 			        }
 		     	},0);
 			    if(this.miniCard == false) {//单条记录进卡片
