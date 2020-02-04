@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d47b58a-9a9a-43af-acf9-5df9f734bcf6" name="Default Changelist" comment="" />
+    <list default="true" id="7d47b58a-9a9a-43af-acf9-5df9f734bcf6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__1__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__1__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__2___cn_chinaclear_ark__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__2___cn_chinaclear_ark__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__3___cn_chinaclear_ark__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__3___cn_chinaclear_ark__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__3__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_cas__3__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__1__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__1__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__2__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__2__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__3__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__3__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__4__war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ark_eai_service__4__war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_MENU_INFO.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO_INSERT.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO_MODIFY.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_MENU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_INFO.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_INFO_MODIFY.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_MENU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_ROLE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV_DICT/SYS_ORG_INFO.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV_DICT/SYS_USER_TYPE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_INSERT_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_MODIFY_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_INFO_MODIFY_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_INFO_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_INFO_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/csdc/portal/InsertOrgServ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/csdc/test/BuyApplyServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csdc/test/BuyApplyServ.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +62,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -27,8 +71,40 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\ciel\server\maven\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../server/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\ciel\server\maven\apache-maven-3.6.3\conf\settings-CIEL.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.7" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="clouddev" />
+        <option value="7.4verify" />
+        <option value="cloudtest" />
+        <option value="sign-artifacts" />
+        <option value="testjdk" />
+        <option value="simulation" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.7" />
+    <option name="vmOptions" value="-Xms128m -Xmx512m -Duser.language=zh -Dfile.encoding=UTF-8" />
+  </component>
   <component name="ProjectId" id="1RV5AMmoDtnq8bAZjrRIa8aCUdG" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -38,17 +114,22 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ark-eai" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/dev/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.csdc.portal" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rh.core.serv.dict" />
     </key>
@@ -117,6 +198,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="ark-eai-service (3)" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="ark-eai-service (3)" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="hr_csdc" type="ResinConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="Resin 3.1.12" ALTERNATIVE_JRE_ENABLED="false">
       <option name="PORT" value="80" />
       <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/" />
@@ -136,6 +264,21 @@
       <output_file path="$PROJECT_DIR$/hr_csdc.log" />
       <log_file alias="log" path="$PROJECT_DIR$" />
       <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -191,6 +334,21 @@
       <workItem from="1576571504177" duration="5432000" />
       <workItem from="1576631843709" duration="5320000" />
       <workItem from="1576725091641" duration="4365000" />
+      <workItem from="1577066673767" duration="5536000" />
+      <workItem from="1577167468729" duration="1013000" />
+      <workItem from="1578365831470" duration="2615000" />
+      <workItem from="1578449161110" duration="139000" />
+      <workItem from="1578449331286" duration="5633000" />
+      <workItem from="1578532209125" duration="5546000" />
+      <workItem from="1578549761793" duration="7353000" />
+      <workItem from="1578878308772" duration="2459000" />
+      <workItem from="1578983815581" duration="2856000" />
+      <workItem from="1579051686405" duration="7035000" />
+      <workItem from="1579136393017" duration="9382000" />
+      <workItem from="1579222297386" duration="7325000" />
+      <workItem from="1579240603783" duration="6006000" />
+      <workItem from="1579578236085" duration="476000" />
+      <workItem from="1580786490619" duration="516000" />
     </task>
     <servers />
   </component>

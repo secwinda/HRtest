@@ -27,3 +27,6 @@ public class BuyApplyServ extends CommonServ {
 		return new OutBean(applyBean);
 	}
 }
+
+
+

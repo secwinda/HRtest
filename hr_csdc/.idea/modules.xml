@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../ark-eai/ark-eai-service/target/m2e-wtp/web-resources/META-INF/maven/cn.chinaclear.ark/ark-eai-service/ark-eai-service (4).iml" filepath="$PROJECT_DIR$/../../../ark-eai/ark-eai-service/target/m2e-wtp/web-resources/META-INF/maven/cn.chinaclear.ark/ark-eai-service/ark-eai-service (4).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hr_csdc.iml" filepath="$PROJECT_DIR$/.idea/hr_csdc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../ark-eai/ark-eai-cas/target/maven-archiver/maven-archiver (2).iml" filepath="$PROJECT_DIR$/../../../ark-eai/ark-eai-cas/target/maven-archiver/maven-archiver (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../ark-eai/ark-eai-client/ark-eai-client-resttemplate/target/maven-archiver/maven-archiver (3).iml" filepath="$PROJECT_DIR$/../../../ark-eai/ark-eai-client/ark-eai-client-resttemplate/target/maven-archiver/maven-archiver (3).iml" />
     </modules>
   </component>
 </project>
