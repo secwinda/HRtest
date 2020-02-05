@@ -1,6 +1,6 @@
 var _viewer = this;
 
-//编辑button，绑定方法使用参考demo.js
+//编辑机构button，绑定方法使用参考demo.js
 _viewer.getBtn("modify_sys").bind("click", function () {
     Tab.open({
         //因为要传递机构名称，所以URL里要有主键（pkCode)
@@ -17,7 +17,7 @@ _viewer.getBtn("modify_sys").bind("click", function () {
 
 });
 
-//新增button
+//新增机构button
 _viewer.getBtn("add_sys").bind("click", function () {
     Tab.open({
         "url": "SYS_ORG_INFO_INSERT.card.do",
@@ -31,6 +31,22 @@ _viewer.getBtn("add_sys").bind("click", function () {
         }
     })
 })
+
+//新增用户button
+_viewer.getBtn("add_user").bind("click", function () {
+    Tab.open({
+        "url": "SYS_USER_INFO_ADD.card.do",
+        "tTitle": "新增用户",
+        "menuFlag": 3,
+        "params": {
+            "callBackHandler" : _viewer,
+            "closeCallBackFunc" : function () {
+                _viewer.refresh();
+            }
+        }
+    })
+})
+
 
 //创建日期：精确到时分秒就行、不需要微秒
 var create_date = _viewer.getItem("create_date");

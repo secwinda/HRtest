@@ -15,5 +15,18 @@ _viewer.getBtn("modify_user").bind("click", function () {
             }
         }
     });
-
 });
+
+
+
+//业务用户类型：OA、非OA
+var userType = _viewer.itemValue("user_type");
+if (userType == 3) {  //OA业务用户
+    _viewer.getItem("businessUser").setValue("使用OA账号");
+}else if (userType == 2) {  //非OA业务用户
+    _viewer.getItem("businessUser").setValue("不使用OA账号");
+}else if (userType == 1 || userType ==5 || userType  ==4) {  //机构管理员、系统管理员、审计管理员
+    //隐藏业务用户类型div
+    var div = document.getElementById("SYS_USER_INFO-businessUser_div");
+    div.style.display = 'none';
+}
