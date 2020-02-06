@@ -4,7 +4,7 @@
 $(document).ready(function () {
 
     // init instance var
-    var myLayout = $('body').layout({applyDemoStyles: true, spacing_closed: 30});
+    var myLayout = $('body').layout({applyStyles: true, spacing_closed: 30});
 
     //左区域 树
 

@@ -26,8 +26,13 @@ public class InsertUserServ extends CommonServ {
         paramBean.set("seq_id", seqId);
 
         //----step3.user_type----
-        int userType = paramBean.getInt("businessUserType");
-        paramBean.set("user_type", userType);
+        int userType = paramBean.getInt("user_type");
+        if (userType == 1) {  //机构管理员
+            paramBean.set("user_type", userType);
+        } else {  //业务用户
+            int businessUserType = paramBean.getInt("businessUserType");
+            paramBean.set("user_type", businessUserType);
+        }
 
         //----step4.password----
         String password = paramBean.getStr("password");

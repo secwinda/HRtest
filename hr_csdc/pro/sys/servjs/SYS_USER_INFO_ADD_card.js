@@ -27,3 +27,16 @@ $("#SYS_USER_INFO_ADD-password_div .right").append(
 _viewer.getBtn("cancel").unbind("click").click(function () {
     Tab.close();
 });
+
+//业务用户类型div是否显示
+var userType = _viewer.itemValue("user_type");
+if (userType == 3) {  //业务用户
+    // _viewer.getItem("businessUser").setValue("使用OA账号");
+}else if (userType == 1) {  //机构管理员
+    //隐藏业务用户类型div
+    var div = document.getElementById("SYS_USER_INFO_ADD-businessUser_div");
+    div.style.display = 'none';
+}
+
+
+

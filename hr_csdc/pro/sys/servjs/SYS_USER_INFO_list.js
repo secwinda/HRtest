@@ -41,8 +41,10 @@ modifyBtn.unbind("click").bind("click", function () {
 var delBtn = _viewer.grid.getBtn("delete_user_row");
 delBtn.unbind("click").bind("click", function () {
 
-    alert("删除用户");
     var pk = jQuery(this).attr("rowpk");//获取主键信息
+    FireFly.doAct(_viewer.servId, "delete", {_PK_: pk}, true, true, function () {
+       _viewer.refresh();
+    });
 
 })
 
@@ -50,13 +52,16 @@ delBtn.unbind("click").bind("click", function () {
 var authorityBtn = _viewer.grid.getBtn("authority_user_row");
 authorityBtn.unbind("click").bind("click", function () {
 
-    alert("授权用户");
-    var pk = jQuery(this).attr("rowpk");//获取主键信息
+    //获取userCode，用于传到授权界面
+    var userCode = $(this).parent("td").siblings("td[icode='user_code']").text();
+
+    // var pk = jQuery(this).attr("rowpk");//获取主键信息
     Tab.open({
-        "url": "SYS_USER_ROLE.list.do?pkCode=" + pk,
+        "url": "SYS_USER_ROLE.list.do",
         "tTitle": "用户授权",
         "menuFlag": 3,
         "params" : {
+            "user_code": userCode,
             "callBackHandler" : _viewer,
             "closeCallBackFunc" : function() {
                 _viewer.refresh();

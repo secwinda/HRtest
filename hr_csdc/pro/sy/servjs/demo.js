@@ -279,7 +279,10 @@ res.unbind("click").bind("click",function() {
  **********************************************************************************************************/
 _viewer.getBtn("selectOne").unbind("click").bind("click", function(event) {//选择一个现有模版
 	//1.构造查询选择参数，其中参数【HTMLITEM】非必填，用以标识返回字段的值为html标签类的
-	var configStr = "SY_COMM_TEMPL,{'TARGET':'~PT_TITLE~PT_CONTENT~PT_PARAM~PT_INCL_CSSJS','SOURCE':'PT_ID~PT_TITLE~PT_CONTENT~PT_PARAM~PT_INCL_CSSJS'," +
+    //SY_COMM_TEMPL:服务名
+    //SOURCE：要展示的字段
+    //HIDE：不展示但是需要前端渲染，从而用于获取值的字段
+    var configStr = "SY_COMM_TEMPL,{'TARGET':'~PT_TITLE~PT_CONTENT~PT_PARAM~PT_INCL_CSSJS','SOURCE':'PT_ID~PT_TITLE~PT_CONTENT~PT_PARAM~PT_INCL_CSSJS'," +
 			"'HIDE':'PT_TITLE~PT_CONTENT','TYPE':'single','HTMLITEM':'PT_CONTENT,PT_INCL_CSSJS'}";
 	var options = {
 		"config" :configStr,

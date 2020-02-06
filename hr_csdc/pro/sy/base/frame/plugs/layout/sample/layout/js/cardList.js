@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     //minSize 设置west、east的最小宽度；north、south最小高度 。形式：数字或百分比 如 400或40%
     //minWidth and minHeight.设定中间区域的最小宽高
-    $('body').layout({applyDemoStyles: true, spacing_closed: 30, minSize:"40%"});
+    $('body').layout({applyStyles: true, spacing_closed: 30, minSize:"40%"});
 
     //左侧cardView
     var cardOpts = {"act":UIConst.ACT_CARD_ADD,"sId": servId,"pCon":jQuery(".ui-layout-west"),"reset":"false","backBtn":"false"};

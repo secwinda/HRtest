@@ -18,7 +18,6 @@ _viewer.getBtn("modify_user").bind("click", function () {
 });
 
 
-
 //业务用户类型：OA、非OA
 var userType = _viewer.itemValue("user_type");
 if (userType == 3) {  //OA业务用户
@@ -29,4 +28,13 @@ if (userType == 3) {  //OA业务用户
     //隐藏业务用户类型div
     var div = document.getElementById("SYS_USER_INFO-businessUser_div");
     div.style.display = 'none';
+}
+
+//是否显示使用人OA信息
+if (userType == 3 || userType == 2) {  //业务用户
+    //隐藏使用人OA信息div
+    var divOAaccount = document.getElementById("SYS_USER_INFO-OAaccount_div");
+    divOAaccount.style.display = 'none';
+    var diaOAname = document.getElementById("SYS_USER_INFO-OAname_div");
+    diaOAname.style.display = 'none';
 }

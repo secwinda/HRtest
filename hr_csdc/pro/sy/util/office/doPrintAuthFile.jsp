@@ -38,7 +38,7 @@ function printWordDoc(docId){
 	try {
 		var tempDownloadURL = getHostURL() + "/file/" + docId;
 		
-		var tempFileName = ZotnClient.DownloadFile(tempDownloadURL, "demo_file.doc" ,false,false,true,false);
+		var tempFileName = ZotnClient.DownloadFile(tempDownloadURL, "_file.doc" ,false,false,true,false);
 		
 		printDoc(tempFileName);
 	}catch(e){
