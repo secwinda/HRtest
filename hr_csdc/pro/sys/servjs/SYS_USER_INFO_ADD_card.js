@@ -1,7 +1,6 @@
 var _viewer = this;
 
 //获取父卡片的org_code并分别赋予新增用户的user_org_code
-_viewer.saveReturn = true;
 if (_viewer.params && _viewer.params.callBackHandler) { //存在父句柄
     var parentCard = _viewer.params.callBackHandler;
     //-----step1. user_org_code----
@@ -19,15 +18,6 @@ if (_viewer.params && _viewer.params.callBackHandler) { //存在父句柄
 $("#SYS_USER_INFO_ADD-user_account_div .right").append(
     $("<div>").text("1-20位字符，支持汉字、字母、数字").css({"color": "red", "margin-top": "10px"}));
 
-//密码提示语
-$("#SYS_USER_INFO_ADD-password_div .right").append(
-    $("<div>").text("12-20位字符(大写字母、小写字母、数字、特殊符号应至少包含三种)").css({"color": "red", "margin-top": "10px"}));
-
-//取消button：点击按钮关闭卡片
-_viewer.getBtn("cancel").unbind("click").click(function () {
-    Tab.close();
-});
-
 //业务用户类型div是否显示
 var userType = _viewer.itemValue("user_type");
 if (userType == 3) {  //业务用户
@@ -37,6 +27,34 @@ if (userType == 3) {  //业务用户
     var div = document.getElementById("SYS_USER_INFO_ADD-businessUser_div");
     div.style.display = 'none';
 }
+
+//密码提示语
+$("#SYS_USER_INFO_ADD-password_div .right").append(
+    $("<div>").text("12-20位字符(大写字母、小写字母、数字、特殊符号应至少包含三种)").css({"color": "red", "margin-top": "10px"}));
+
+//保存之前校验
+_viewer.saveMind = function() {
+    //校验两次输入的密码是否一致
+    if (_viewer.itemValue("password") !== _viewer.itemValue("confirm_password")) {
+        _viewer.cardBarTipError("两次输入的密码不一致");
+        return false;
+    }else {
+        //返回到用户列表界面
+        _viewer.saveReturn = true;
+    }
+
+};
+
+//取消button：点击按钮关闭卡片
+_viewer.getBtn("cancel").unbind("click").click(function () {
+    Tab.close();
+});
+
+
+
+
+
+
 
 
 

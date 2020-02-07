@@ -30,7 +30,7 @@ public class ModifyUserServ extends CommonServ {
     }
 
     /**
-     * 保存button后的动作
+     * 保存button后的动作.将修改用户的密码update在sys_password_record对应的密码
      * @param paramBean 前端页面的bean
      * @param outBean 存入数据库中的bean
      */

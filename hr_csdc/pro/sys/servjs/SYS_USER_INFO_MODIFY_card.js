@@ -2,8 +2,8 @@ var _viewer = this;
 
 //保存之前校验
 _viewer.saveMind = function() {
-
-    if (_viewer.itemValue("password") !== _viewer.itemValue("comfirm_password")) {
+    //校验两次输入的密码是否一致
+    if (_viewer.itemValue("password") !== _viewer.itemValue("confirm_password")) {
         _viewer.cardBarTipError("两次输入的密码不一致");
         return false;
     }
