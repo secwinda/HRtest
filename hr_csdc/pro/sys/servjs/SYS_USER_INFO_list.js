@@ -55,13 +55,18 @@ authorityBtn.unbind("click").bind("click", function () {
     //获取userCode，用于传到授权界面
     var userCode = $(this).parent("td").siblings("td[icode='user_code']").text();
 
-    // var pk = jQuery(this).attr("rowpk");//获取主键信息
+    // 获取orgCode, userType，用于传到授权界面
+    var orgCode = $(this).parent("td").siblings("td[icode='user_org_code']").text();
+    var userType = $(this).parent("td").siblings("td[icode='user_type']").text();
+
     Tab.open({
         "url": "SYS_USER_ROLE.list.do",
         "tTitle": "用户授权",
         "menuFlag": 3,
         "params" : {
             "user_code": userCode,
+            "org_code": orgCode,
+            "user_type": userType,
             "callBackHandler" : _viewer,
             "closeCallBackFunc" : function() {
                 _viewer.refresh();
