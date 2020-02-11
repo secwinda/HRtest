@@ -47,6 +47,21 @@ _viewer.getBtn("add_user").bind("click", function () {
     })
 })
 
+//新增角色button
+_viewer.getBtn("add_role").bind("click", function () {
+    Tab.open({
+        "url": "SYS_ROLE_INFO_ADD.card.do",
+        "tTitle": "新增角色",
+        "menuFlag": 3,
+        "params": {
+            "callBackHandler" : _viewer,
+            "closeCallBackFunc" : function () {
+                _viewer.refresh();
+            }
+        }
+    })
+})
+
 
 //创建日期：精确到时分秒就行、不需要微秒
 var create_date = _viewer.getItem("create_date");

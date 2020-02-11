@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d47b58a-9a9a-43af-acf9-5df9f734bcf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_AUTHORITY.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV_DICT/SYS_MENU_CODE_NAME.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_AUTHORITY_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_MENU_VALID_card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_MENU_VALID_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/csdc/portal/UserAddRoleServ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO_ADD.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO_MODIFY.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ROLE_INFO_ADD_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ROLE_INFO_MODIFY_card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ROLE_INFO_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/csdc/portal/InsertRoleServ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_INFO.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_INFO.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_MENU_VALID.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_MENU_VALID.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_INFO_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_INFO_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_ROLE_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_ROLE_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/classes/com/csdc/portal/UserAddRoleServ.class" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/classes/com/csdc/portal/UserAddRoleServ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_card.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -322,6 +322,7 @@
       <workItem from="1580956433777" duration="13102000" />
       <workItem from="1581044904602" duration="6234000" />
       <workItem from="1581304525544" duration="13896000" />
+      <workItem from="1581389469789" duration="5978000" />
     </task>
     <servers />
   </component>
