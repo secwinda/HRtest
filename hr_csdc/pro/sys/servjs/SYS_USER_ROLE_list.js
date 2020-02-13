@@ -44,11 +44,13 @@ _viewer.getBtn("add_role").bind("click", function () {
 var modifyBtn = _viewer.grid.getBtn("modify_menu_date");
 modifyBtn.unbind("click").bind("click", function () {
 
-    alert("为用户关联的特定角色设置有效期。不会写。");
-
-    //获取usercode，用于传到新增关联角色界面
+    //获取usercode/roleCode，用于传到设置有效期界面
     //注：usercode是上一个界面的授权btn传来的
-    var userCode = _viewer.params.user_code;
+    // var userCode = _viewer.params.user_code;
+
+    //获取roleCode，用于传到授权界面
+    var userCode = $(this).parent("td").siblings("td[icode='user_code']").text();
+    var roleCode = $(this).parent("td").siblings("td[icode='role_code']").text();
 
     Tab.open({
         "url": "SYS_USER_MENU_VALID.list.do",
@@ -56,6 +58,7 @@ modifyBtn.unbind("click").bind("click", function () {
         "menuFlag": 3,
         "params": {
             "user_code": userCode,
+            "role_code": roleCode,
             "callBackHandler": _viewer,
             "closeCallBackFunc": function () {
                 _viewer.refresh();
@@ -68,14 +71,10 @@ modifyBtn.unbind("click").bind("click", function () {
 var deleteBtn = _viewer.grid.getBtn("delete_user_role");
 deleteBtn.unbind("click").bind("click", function () {
 
-    alert("删除用户-角色关联");
-
     var pk = jQuery(this).attr("rowpk"); //获取主键信息
-    alert(pk);
+
     FireFly.doAct(_viewer.servId, "delete", {_PK_: pk}, true, true, function () {
         _viewer.refresh();
     });
-
-
 })
 

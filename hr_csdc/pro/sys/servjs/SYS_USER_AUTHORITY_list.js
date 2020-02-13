@@ -6,7 +6,6 @@ _viewer.getBtn("cancel").unbind("click").click(function () {
 });
 
 
-
 var userCode;
 var orgCode;
 var userType;
@@ -21,13 +20,15 @@ if (_viewer.params && _viewer.params.user_code) {
         orgCode = _viewer.params.org_code;
         userType = _viewer.params.user_type;
 
-        //SYS_ROLE_INFO展示当前org_code下的管理员/业务角色
+        //SYS_ROLE_INFO展示当前org_code下的管理员/业务角色，且过滤已经关联的角色
         if (userType == 1 || userType == 5 || userType == 4) {  //管理员
             _viewer.setExtWhere("and org_code = '" + orgCode + "'"
-            + "and role_type = 1");
-        }else if (userType == 2 || userType == 3) {  //业务
+                + "and role_type = 1 and role_code not in" +
+                "(SELECT role_code FROM sys_user_role where user_code='" + userCode + "')");
+        } else if (userType == 2 || userType == 3) {  //业务
             _viewer.setExtWhere("and org_code = '" + orgCode + "'"
-                + "and role_type = 2");
+                + "and role_type = 2 and role_code not in" +
+                "(SELECT role_code FROM sys_user_role where user_code='" + userCode + "')");
         }
 
         _viewer.refresh();
@@ -35,16 +36,37 @@ if (_viewer.params && _viewer.params.user_code) {
 
 }
 
-alert("userCode:" + userCode);
-alert("orgCode:" + orgCode);
-alert("userType:" + userType);
 
-//过滤已经关联的角色
-//获取后端/src/com/csdc/portal/UserAddRoleServ.java的getAttachedRole方法
-FireFly.doAct("TS_EXPENSE_APPLY", "calculate", {EA_ID:cardView.getPKCode()},
-    false, true, function(data) {
-        cardView.getItem("EA_PAPER_COUNT").setValue(data.EA_PAPER_COUNT);
-        cardView.getItem("EA_AMOUNT").setValue(data.EA_AMOUNT);
-    })
+
+//批量保存btn：batchSave
+_viewer.getBtn("batchSave").unbind("click").click(function () {
+
+    var arr = _viewer.grid.getSelectPKCodes();
+
+
+    var dataList = $.map(arr, function (pk) {
+        return {
+            user_code: userCode,
+            role_code: _viewer.grid.getRowItemValue(pk, "role_code"),
+            role_name: _viewer.grid.getRowItemValue(pk, "role_name"),
+            org_code: orgCode
+        };
+    });
+
+    // console.log(dataList)
+    FireFly.doAct(_viewer.servId, "doBatchSave", {dataList: $.toJSON(dataList)}, true, true, function () {
+
+    });
+
+
+    //点击保存btn后，返回列表
+    _viewer.backImg.mousedown();
+});
+
+// //点击保存btn后，返回列表
+// _viewer.saveReturn = true;
+//
+// _viewer.backImg.mousedown();
+
 
 

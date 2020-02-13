@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d47b58a-9a9a-43af-acf9-5df9f734bcf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO_ADD.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO_MODIFY.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ROLE_INFO_ADD_card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ROLE_INFO_MODIFY_card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ROLE_INFO_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/csdc/portal/InsertRoleServ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/classes/com/csdc/portal/UserAddRoleServ.class" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/classes/com/csdc/portal/UserAddRoleServ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ORG_INFO.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_ROLE_INFO.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_ORG_INFO_card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_AUTHORITY.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_AUTHORITY.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_MENU_VALID.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_MENU_VALID.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_ROLE.json" beforeDir="false" afterPath="$PROJECT_DIR$/pro/WEB-INF/doc/SY_SERV/SYS_USER_ROLE.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_AUTHORITY_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_AUTHORITY_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_MENU_VALID_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_MENU_VALID_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_ROLE_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pro/sys/servjs/SYS_USER_ROLE_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/csdc/portal/UserAddRoleServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/csdc/portal/UserAddRoleServ.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -323,6 +321,8 @@
       <workItem from="1581044904602" duration="6234000" />
       <workItem from="1581304525544" duration="13896000" />
       <workItem from="1581389469789" duration="5978000" />
+      <workItem from="1581475700319" duration="1422000" />
+      <workItem from="1581561041934" duration="14109000" />
     </task>
     <servers />
   </component>
@@ -349,6 +349,11 @@
     <watches-manager>
       <configuration name="ResinConfigurationType">
         <watch expression="OrgMgr.getDept(&quot;&quot;)" language="JAVA" />
+        <watch expression="paramBean.getList(&quot;dataList&quot;)" language="JAVA" />
+        <watch expression="paramBean.getList(&quot;dataList&quot;)" language="JAVA" />
+        <watch expression="paramBean.getList(&quot;dataList&quot;)" language="JAVA" />
+        <watch expression="paramBean.getStr(&quot;dataList&quot;)" language="JAVA" />
+        <watch expression="JsonUtils.toBeanList(paramBean.getStr(&quot;dataList&quot;))" language="JAVA" custom="com.rh.core.util.JsonUtils" />
       </configuration>
     </watches-manager>
   </component>
