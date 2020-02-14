@@ -37,7 +37,6 @@ if (_viewer.params && _viewer.params.user_code) {
 }
 
 
-
 //批量保存btn：batchSave
 _viewer.getBtn("batchSave").unbind("click").click(function () {
 
@@ -55,18 +54,20 @@ _viewer.getBtn("batchSave").unbind("click").click(function () {
 
     // console.log(dataList)
     FireFly.doAct(_viewer.servId, "doBatchSave", {dataList: $.toJSON(dataList)}, true, true, function () {
+        //父页面刷新
+        //_viewer.params.closeCallBackFunc是父页面通过“授权btn”传来的参数，其值为页面刷新
+        if (_viewer.params && _viewer.params.closeCallBackFunc) {
+            _viewer.params.closeCallBackFunc();
+        }
 
+        //点击保存btn后，返回父页面
+        _viewer.backImg.mousedown();
     });
 
 
-    //点击保存btn后，返回列表
-    _viewer.backImg.mousedown();
+
 });
 
-// //点击保存btn后，返回列表
-// _viewer.saveReturn = true;
-//
-// _viewer.backImg.mousedown();
 
 
 
