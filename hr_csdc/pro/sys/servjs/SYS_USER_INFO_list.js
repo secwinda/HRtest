@@ -42,9 +42,12 @@ var delBtn = _viewer.grid.getBtn("delete_user_row");
 delBtn.unbind("click").bind("click", function () {
 
     var pk = jQuery(this).attr("rowpk");//获取主键信息
-    FireFly.doAct(_viewer.servId, "delete", {_PK_: pk}, true, true, function () {
-       _viewer.refresh();
-    });
+
+    if (confirm("是否确认删除？")) {
+        FireFly.doAct(_viewer.servId, "delete", {_PK_: pk}, true, true, function () {
+            _viewer.refresh();
+        });
+    }
 
 })
 
