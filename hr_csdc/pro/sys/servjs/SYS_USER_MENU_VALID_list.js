@@ -22,10 +22,10 @@ if (_viewer.params && _viewer.params.user_code) {
 }
 
 //生效起止时间：精确到时分秒就行、不需要微秒
-$(input).substring(0, 19);
-
-// var start_date = _viewer.getItem("start_date");
-// start_date.setValue(start_date.getValue().substring(0, 19));
-// var end_date = _viewer.getItem("end_date");
-// end_date.setValue(end_date.getValue().substring(0, 19));
+$("input", "#SYS_USER_MENU_VALID").each(function (item, index) {
+    var value = $(this).val();
+    if (value && value.length > 10) {
+        $(this).val(value.substring(0, 10));
+    }
+});
 
