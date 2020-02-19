@@ -13,39 +13,7 @@ import com.rh.core.util.Lang;
 import java.util.*;
 
 public class UserAddRoleServ extends CommonServ {
-    /**
-     * 获取用户已关联的角色
-     * @param paramBean 前端的参数
-     * @return 角色rolecode集合
-     */
-    public OutBean getAttachedRole(ParamBean paramBean) {
-
-        //step1. 在SYS_USER_ROLE中搜索用户关联的角色
-        String userCode = paramBean.getStr("userCode");
-        List<Bean> roleList = ServDao.finds("SYS_USER_ROLE",
-                new SqlBean().and("user_code", userCode).and("is_delete", 0));
-
-        Set<String> roleCodeSet = new HashSet<>();
-        for (Bean bean : roleList) {
-            roleCodeSet.add(bean.getStr("role_code"));
-        }
-
-        //-----测试遍历----
-        for (String str : roleCodeSet) {
-            System.out.println(str);
-        }
-
-
-
-        OutBean roleBean = new OutBean();
-        roleBean.set("roleCodeSet", roleCodeSet);
-
-        //roleBean
-        return roleBean;
-
-    }
-
-
+    
     /**
      * 批量保存到SYS_USER_ROLE
      * @param paramBean 前端

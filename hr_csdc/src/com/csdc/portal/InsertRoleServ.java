@@ -36,7 +36,7 @@ public class InsertRoleServ extends CommonServ {
         if (StringUtils.isNotEmpty(orgCode)) {
             Bean orgBean = ServDao.find("SYS_ORG_INFO",
                     new SqlBean().and("org_code", orgCode).and("is_delete", 0)
-                            .selects("seq_id").selects("parent_org_code").selects("parent_org_id"));
+                            .selects("seq_id, parent_org_code, parent_org_id"));
 
             int orgId = orgBean.getInt("seq_id");
             String parentOrgCode = orgBean.getStr("parent_org_code");
